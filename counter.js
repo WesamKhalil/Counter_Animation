@@ -8,7 +8,8 @@
 // variety which specifies how much variety in seconds you want the animationto play compared to the core duration.
 // Here's an example of calling the function.
 
-{/* <script src="counter.js"></script>
+{/* 
+<script src="counter.js"></script>
 <script>
     counterAnimation({
         onShowId: "#nums",
@@ -17,7 +18,28 @@
         duration: 1.5,
         variety: 1.5
     })
-</script> */}
+</script> 
+*/}
+
+// To get a populated nums array to use with counterAnimation write something like this.
+{/* 
+@{
+    var numList = numbers.ToList();
+}
+<script>
+    let nums = [];
+    @for(int i = 0; i < numList.Count(); i++)
+    {
+        const obj@i = {
+            id: "@numList[i].Id",
+            start: 0,
+            end: @numList[i].End
+        }
+
+        nums.push(obj@i);
+    }
+</script> 
+*/}
 
 const counterAnimation = ({ onShowId = "body", onShowDisplacement = 0, nums = [], duration = 1, variety = 1 }) => {
 
