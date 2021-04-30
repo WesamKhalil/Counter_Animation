@@ -56,7 +56,7 @@ const counterAnimation = ({ onShowId = "body", onShowDisplacement = 0, nums = []
         }, 1000 / 60);
     }
 
-    let elementPosition = document.querySelector(onShowId).offsetTop;
+    let elementPosition = document.querySelector(onShowId).getBoundingClientRect().top;
 
     const checkInView = () => {
         if(window.scrollY + window.innerHeight - onShowDisplacement > elementPosition) {

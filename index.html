@@ -18,8 +18,8 @@
         </div>
         <div style="height: 150vh;"></div>
         <script src="counter.js"></script>
-        <script>
-            counterAnimation({
+        <script src="counter.js">
+            window.onload = counterAnimation({
                 onShowId: "#nums",
                 onShowDisplacement: 200,
                 nums: [{ id: 'one', end: 1000 }, { id: 'two', end: 10000 }, { id: 'three', end: 100000 }, { id: 'four', end: 6000000 }, { id: 'five', end: 300000000 }, { id: 'six', end: 237000000 }],
