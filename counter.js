@@ -1,3 +1,4 @@
+// https://github.com/WesamKhalil/Counter_Animation
 // This is a function that animates counting numbers.
 // The bare minimum to get this script working is passing in an array with objects that have an 'id' and 'start' property, with the 'end' property being optional.
 // If you animation is somewhere at the bottom of the page you don't want it to run until the client has scrolled down to be able to see it.
@@ -56,9 +57,8 @@ const counterAnimation = ({ onShowId = "body", onShowDisplacement = 0, nums = []
         }, 1000 / 60);
     }
 
-    let elementPosition = document.querySelector(onShowId).getBoundingClientRect().top;
-
     const checkInView = () => {
+        let elementPosition = document.querySelector(onShowId).getBoundingClientRect().top;
         if(window.scrollY + window.innerHeight - onShowDisplacement > elementPosition) {
             document.removeEventListener("scroll", checkInView)
             nums.forEach(num => runAnimation(num));
