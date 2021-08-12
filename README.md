@@ -8,3 +8,4 @@ duration which specifies how long you want the animatin to play in seconds.
 variety which specifies how much variety in seconds you want the animationto play compared to the core duration.  
 Here's an example of calling the function.  
 Look at the counter.js file for examples how to use it in the comments.  
+NOTE TO SELF!: Possibly change it in the future to read a number from an element with the targeted class/id instead of passing an array of numbers as an argument.
