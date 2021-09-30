@@ -13,4 +13,4 @@ PROBLEMS TO BE FIXED!:
 Animation won't run on initial page load if it's immediatley viewable at the top of the page. It only animates after scrolling.  
 Animations aren't running independtly, whe one of the animations on the top runs the rest at the bottom run as well.  
 Animations running to early, before they are in view, this was a feature not a bug but should be removed or set the default to 0.  
-Numbers not rendering initially, just an empty string, they should initially render a 0.
+Numbers not rendering initially, just an empty string, they should initially render a 0.  
